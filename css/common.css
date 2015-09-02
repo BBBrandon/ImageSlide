@@ -2,3 +2,75 @@
 	margin: 0;
 	padding: 0;
 }
+body{
+	font-size: 32px;
+	font-family: "blackadder itc";
+	background-color: #fff;
+	color: #555;
+	-webkit-font-smoothing:antialiased;
+}
+
+/*总体样式*/
+.slider .main .main-i,
+.slider .main,
+.slider{
+	width: 100%;
+	height: 400px;
+	position: relative;
+}
+/*
+ * 存放多图片的特殊样式
+ */
+.slider .main,
+.main {
+	overflow: hidden;
+}
+.slider .main .main-i .caption{
+	position: absolute;
+	right: 60%;
+	top:30%;
+	z-index: 9;
+}
+.slider .main .main-i img{
+	width: 100%;
+	left: 0;
+	top:0;
+	position: absolute;
+	z-index: 1;
+}
+.slider .main .main-i .caption h2{
+	font-size: 40px;
+	line-height: 50px;
+	color: #b5b5b5;
+	text-align:right;
+}
+.slider .main .main-i .caption h3{
+	font-size: 70px;
+	line-height: 70px;
+	color: #000000;
+	text-align:right;
+}
+
+.slider .ctrl{
+	width: 100%;
+	height: 13px;
+	text-align: center;
+	left: 0;
+	position: absolute;
+	bottom: -13px;
+	background-color: #f00;
+}
+.slider .ctrl .ctrl-i{
+	display: inline-block;
+	width: 150px;
+	height: 13px;
+	text-align: center;
+	position: relative;
+}
+.slider .ctrl .ctrl-i img{
+	width:100%;
+	position: absolute;
+	left: 0;
+	bottom: 50px;
+	z-index: 10;
+}
